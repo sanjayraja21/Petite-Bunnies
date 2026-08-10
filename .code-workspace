@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.js": "javascript",
+      "*.jsx": "javascriptreact",
+      "*.ts": "typescript",
+      "*.tsx": "typescriptreact",
+      "*.py": "python"
+    },
+    "python.defaultInterpreterPath": "C:/Users/sanjay/AppData/Local/Microsoft/WindowsApps/python3.11.exe"
+  }
+}
