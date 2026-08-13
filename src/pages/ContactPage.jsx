@@ -54,9 +54,11 @@ function ContactPage() {
             fontSize: "42px",
             marginBottom: "10px",
             color: "#111111",
+            fontFamily: "sans-serif",
+            
           }}
         >
-          Contact
+          <storng>Contact</storng>
         </h1>
 
         <p
@@ -81,7 +83,7 @@ function ContactPage() {
           }}
         >
           <p>
-            <strong>Phone:</strong> 9361827537 / 9841439226 / 9841439226
+            <strong>Phone:</strong> 9841439226 / 9361827537
           </p>
 
           <p>
@@ -99,7 +101,29 @@ function ContactPage() {
 
           <p>
             <strong>Instagram:</strong>{" "}
-            petite.bunnies._ / sankbeast_boy
+            <a
+              href="https://www.instagram.com/petite.bunnies._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#222222",
+                textDecoration: "none",
+              }}
+            >
+              petite.bunnies._
+            </a>
+            / 
+            <a
+              href="https://www.instagram.com/sankbeast_boy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#222222",
+                textDecoration: "none",
+              }}
+            >
+              sankbeast_boy
+            </a>
           </p>
         </div>
 
