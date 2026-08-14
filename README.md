@@ -67,6 +67,6 @@ Petite-Bunnies/
 ```
 ## Output:
 ```
--Local Development : ```http://localhost:5173/```
--Network : ```http://192.168.8.215:5174/```
--Live Deployment : ```https://petite-bunnies.onrender.com```
+Local Development : http://localhost:5173/
+Network : http://192.168.8.215:5174/
+Live Deployment : https://petite-bunnies.onrender.com
