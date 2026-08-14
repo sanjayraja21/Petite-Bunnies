@@ -30,6 +30,8 @@ The UI includes:
 -  Responsive layouts
   
 ## Folder structure
+
+```
 Petite-Bunnies/
 │
 ├── package.json                 # Project dependencies and npm scripts
@@ -62,6 +64,7 @@ Petite-Bunnies/
         ├── AboutPage.jsx        # About Petite Bunnies
         └── ContactPage.jsx      # Contact information
 
+```
 ## Output:
 Local Development : http://localhost:5173/
 Network : http://192.168.8.215:5174/
