@@ -30,17 +30,12 @@ function Layout({ children }) {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(251,207,232,0.35),transparent_40%),linear-gradient(135deg,#fffaf5_0%,#fef2f2_100%)] text-stone-700">
 
-      {/* =====================================================
-          HEADER
-      ===================================================== */}
 
       <header className="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
 
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
 
-          {/* =================================================
-              LOGO
-          ================================================= */}
+   
 
           <Link
             to="/"
@@ -66,9 +61,6 @@ function Layout({ children }) {
             </div>
           </Link>
 
-          {/* =================================================
-              DESKTOP NAVIGATION
-          ================================================= */}
 
           <nav className="hidden items-center gap-6 md:flex">
 
@@ -90,57 +82,6 @@ function Layout({ children }) {
 
           </nav>
 
-          {/* =================================================
-              DESKTOP ACTION ICONS
-          ================================================= */}
-
-          <div className="hidden items-center gap-2 md:flex">
-
-            {/* Search */}
-
-            <button
-              type="button"
-              aria-label="Search"
-              className="flex h-10 w-10 items-center justify-center rounded-full text-stone-600 transition hover:bg-rose-50 hover:text-moss-600"
-            >
-              <FaSearch />
-            </button>
-
-            {/* Wishlist */}
-
-            <Link
-              to="/wishlist"
-              aria-label="Wishlist"
-              className="relative flex h-10 w-10 items-center justify-center rounded-full text-stone-600 transition hover:bg-rose-50 hover:text-rose-600"
-            >
-              <FaHeart />
-            </Link>
-
-            {/* Cart */}
-
-            <Link
-              to="/cart"
-              aria-label="Shopping cart"
-              className="relative flex h-10 w-10 items-center justify-center rounded-full text-stone-600 transition hover:bg-rose-50 hover:text-moss-600"
-            >
-              <FaShoppingCart />
-            </Link>
-
-            {/* User */}
-
-            <Link
-              to="/login"
-              aria-label="User account"
-              className="flex h-10 w-10 items-center justify-center rounded-full text-stone-600 transition hover:bg-rose-50 hover:text-moss-600"
-            >
-              <FaUser />
-            </Link>
-
-          </div>
-
-          {/* =================================================
-              MOBILE HAMBURGER BUTTON
-          ================================================= */}
 
           <button
             type="button"
@@ -158,9 +99,6 @@ function Layout({ children }) {
 
         </div>
 
-        {/* =====================================================
-            MOBILE MENU
-        ===================================================== */}
 
         <div
           className={`overflow-hidden border-t border-stone-100 bg-white/95 backdrop-blur-xl transition-all duration-300 md:hidden ${
@@ -193,54 +131,7 @@ function Layout({ children }) {
 
             </div>
 
-            {/* Mobile Actions */}
-
-            <div className="mt-4 grid grid-cols-4 gap-2 border-t border-stone-100 pt-4">
-
-              {/* Search */}
-
-              <button
-                type="button"
-                className="flex flex-col items-center gap-1 rounded-xl bg-stone-50 px-3 py-3 text-xs text-stone-600 transition hover:bg-rose-50 hover:text-moss-700"
-              >
-                <FaSearch className="text-base" />
-                Search
-              </button>
-
-              {/* Wishlist */}
-
-              <Link
-                to="/wishlist"
-                onClick={closeMobileMenu}
-                className="flex flex-col items-center gap-1 rounded-xl bg-stone-50 px-3 py-3 text-xs text-stone-600 transition hover:bg-rose-50 hover:text-rose-600"
-              >
-                <FaHeart className="text-base" />
-                Wishlist
-              </Link>
-
-              {/* Cart */}
-
-              <Link
-                to="/cart"
-                onClick={closeMobileMenu}
-                className="flex flex-col items-center gap-1 rounded-xl bg-stone-50 px-3 py-3 text-xs text-stone-600 transition hover:bg-rose-50 hover:text-moss-700"
-              >
-                <FaShoppingCart className="text-base" />
-                Cart
-              </Link>
-
-              {/* Account */}
-
-              <Link
-                to="/login"
-                onClick={closeMobileMenu}
-                className="flex flex-col items-center gap-1 rounded-xl bg-stone-50 px-3 py-3 text-xs text-stone-600 transition hover:bg-rose-50 hover:text-moss-700"
-              >
-                <FaUser className="text-base" />
-                Account
-              </Link>
-
-            </div>
+            
 
           </nav>
 
@@ -264,17 +155,18 @@ function Layout({ children }) {
 
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
 
-          {/* =================================================
-              ABOUT
-          ================================================= */}
 
           <div>
 
             <div className="mb-4 flex items-center gap-3">
 
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-rose-300 to-pink-500 text-xl text-white shadow-md">
-                🐰
-              </div>
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-md sm:h-14 sm:w-14">
+  <img
+    src="/images/logo.jpg"
+    alt="Petite Bunnies Logo"
+    className="h-full w-full object-cover"
+  />
+</div>
 
               <h3 className="text-lg font-semibold text-stone-800">
                 Petite Bunnies
@@ -288,10 +180,6 @@ function Layout({ children }) {
             </p>
 
           </div>
-
-          {/* =================================================
-              CONTACT
-          ================================================= */}
 
           <div>
 
@@ -334,10 +222,6 @@ function Layout({ children }) {
             </div>
 
           </div>
-
-          {/* =================================================
-              SOCIAL MEDIA
-          ================================================= */}
 
           <div>
 

@@ -9,6 +9,11 @@ import {
   FaShieldAlt,
   FaTruck,
 } from 'react-icons/fa';
+
+// =====================================================
+// FEATURED PRODUCTS
+// =====================================================
+
 const featuredProducts = [
   {
     id: 1,
@@ -35,6 +40,11 @@ const featuredProducts = [
     image: '/images/hens/hen.jpg',
   },
 ];
+
+// =====================================================
+// WHY PETITES FEATURES
+// =====================================================
+
 const whyPetitesFeatures = [
   {
     title: 'Gentle Handling',
@@ -57,11 +67,17 @@ const whyPetitesFeatures = [
     icon: FaLeaf,
   },
 ];
+
+// =====================================================
+// ANIMATION SETTINGS
+// =====================================================
+
 const fadeUp = {
   hidden: {
     opacity: 0,
     y: 25,
   },
+
   visible: {
     opacity: 1,
     y: 0,
@@ -71,11 +87,13 @@ const fadeUp = {
     },
   },
 };
+
 const fadeRight = {
   hidden: {
     opacity: 0,
     x: 25,
   },
+
   visible: {
     opacity: 1,
     x: 0,
@@ -86,11 +104,17 @@ const fadeRight = {
   },
 };
 
+// =====================================================
+// HERO SECTION
+// =====================================================
 
 function HeroSection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="grid items-center gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+
+        {/* ================= HERO CONTENT ================= */}
+
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -98,24 +122,32 @@ function HeroSection() {
           className="glass rounded-[2rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-11"
         >
           {/* Badge */}
+
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-2 text-sm font-medium text-rose-700">
             <span>🌿</span>
             <span>Healthy animals • Happy families</span>
           </div>
+
           {/* Heading */}
+
           <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-stone-800 sm:text-5xl lg:text-[3.5rem]">
             Find Your
             <span className="block">
               Perfect Companion
             </span>
           </h1>
+
           {/* Description */}
+
           <p className="mt-5 max-w-2xl text-base leading-7 text-stone-600 sm:text-lg">
             Discover beautiful bunnies, cheerful chicks, and productive hens
             from our farm with caring support and easy booking.
           </p>
+
           {/* Buttons */}
+
           <div className="mt-7 flex flex-wrap gap-3">
+
             <Link
               to="/shop"
               className="inline-flex items-center gap-2 rounded-full bg-moss-600 px-6 py-3 font-semibold text-grey shadow-md transition duration-300 hover:-translate-y-1 hover:bg-moss-700 hover:shadow-lg"
@@ -123,6 +155,7 @@ function HeroSection() {
               Explore Now
               <FaArrowRight className="text-sm" />
             </Link>
+
             <a
               href="tel:9361827537"
               aria-label="Call Petites Farm"
@@ -131,19 +164,28 @@ function HeroSection() {
               <FaPhoneAlt className="text-sm" />
               Contact Us
             </a>
+
           </div>
+
           {/* Trust Information */}
+
           <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-stone-600">
+
             <span className="flex items-center gap-2">
               <FaStar className="text-amber-500" />
               4.9/5 Customer Love
             </span>
+
             <span className="flex items-center gap-2">
               <FaLeaf className="text-moss-600" />
               Healthy & Well Cared
             </span>
+
           </div>
         </motion.div>
+
+        {/* ================= HERO IMAGE ================= */}
+
         <motion.div
           variants={fadeRight}
           initial="hidden"
@@ -173,6 +215,11 @@ function HeroSection() {
     </section>
   );
 }
+
+// =====================================================
+// PRODUCT CARD
+// =====================================================
+
 function ProductCard({ product }) {
   return (
     <motion.article
@@ -248,6 +295,11 @@ function ProductCard({ product }) {
     </motion.article>
   );
 }
+
+// =====================================================
+// FEATURED PRODUCTS
+// =====================================================
+
 function FeaturedProducts() {
   return (
     <section
@@ -300,6 +352,11 @@ function FeaturedProducts() {
     </section>
   );
 }
+
+// =====================================================
+// QUICK SERVICES
+// =====================================================
+
 function QuickServices() {
   const services = [
     {
@@ -359,6 +416,11 @@ function QuickServices() {
     </section>
   );
 }
+
+// =====================================================
+// WHY PETITES
+// =====================================================
+
 function WhyPetites() {
   return (
     <section className="mx-auto mt-14 max-w-7xl px-4 lg:px-8">
@@ -468,6 +530,11 @@ function WhyPetites() {
     </section>
   );
 }
+
+// =====================================================
+// HOME PAGE
+// =====================================================
+
 function HomePage() {
   return (
     <main className="pb-16">
@@ -483,4 +550,9 @@ function HomePage() {
     </main>
   );
 }
+
+// =====================================================
+// DEFAULT EXPORT
+// =====================================================
+
 export default HomePage;
